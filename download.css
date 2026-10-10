@@ -1,0 +1,28 @@
+@font-face{font-family:LuoPixel;src:url('./fonts/luo-pixel.ttf') format('truetype');font-weight:400 700;font-style:normal;font-display:swap}
+:root{font:9px LuoPixel,Verdana,Arial,sans-serif;color-scheme:light;--ink:#111;--frame:#6794a7}
+*{box-sizing:border-box}body{margin:0}img{image-rendering:pixelated}h1,h2,h3,p{margin:0}h1,h2,h3{font-size:9px}p{line-height:1.8;color:#555}a,summary{touch-action:manipulation}a:focus-visible,summary:focus-visible{outline:2px dotted currentColor;outline-offset:3px}
+.download-body{min-height:100svh;padding:40px 0 48px;background:#252525;color:var(--ink)}
+.download-page{width:calc(100% - 32px);max-width:720px;margin:auto}
+.download-logo{display:flex;justify-content:center;margin-bottom:28px}
+.download-logo img{display:block;image-rendering:pixelated}
+.download-window{position:relative;width:100%;padding:46px 25px 25px;margin-bottom:24px;background-color:var(--frame);background-image:url('./habbo/window.top.left.png'),url('./habbo/window.top.right.png'),url('./habbo/window.bottom.left.png'),url('./habbo/window.bottom.right.png'),url('./habbo/window.top.middle.png'),url('./habbo/window.bottom.middle.png'),url('./habbo/window.middle.left.png'),url('./habbo/window.middle.right.png');background-position:left top,right top,left bottom,right bottom,center top,center bottom,left center,right center;background-repeat:no-repeat;background-size:11px 11px,11px 11px,11px 11px,11px 11px,calc(100% - 22px) 12px,calc(100% - 22px) 12px,12px calc(100% - 22px),11px calc(100% - 22px);border-radius:11px;box-shadow:3px 4px #0008;overflow:hidden}
+.download-window:before{content:'';position:absolute;inset:34px 11px 11px;background:#efefef;border:1px solid #111;border-radius:3px;z-index:0}
+.download-window>*{position:relative;z-index:1}
+.download-window>.habbo-heading{position:absolute;inset:9px 18px auto;display:flex;align-items:center;justify-content:center;gap:9px;min-height:17px}
+.habbo-heading>img{position:absolute;left:0;max-width:29px;max-height:20px;object-fit:contain}
+.download-intro{padding:8px 9px 18px;border-bottom:1px solid #aaa;margin-bottom:8px;line-height:2}
+.download-options{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0}
+.download-option{padding:18px 16px 8px;min-width:0}
+.download-option+ .download-option{border-left:1px solid #aaa}
+.download-platform{min-height:47px;display:flex;flex-direction:column;gap:10px}
+.download-platform h2{font-size:9px;color:#111}
+.download-platform span,.download-version{font-size:9px;color:#555;line-height:1.8}
+.download-version{margin:10px 0 5px}
+.download-requirement{margin:0 0 18px;line-height:1.8}
+.download-button{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;padding:7px 15px;text-align:center;text-decoration:none;font-weight:bold;white-space:nowrap;color:#111;background:url('./habbo/button.a.left.active.png') left center /5px 100% no-repeat,url('./habbo/button.a.right.active.png') right center /6px 100% no-repeat,url('./habbo/button.a.middle.active.png') center /calc(100% - 11px) 100% no-repeat;line-height:20px}
+.download-button:hover{filter:brightness(1.06)}
+.download-button:active{transform:translateY(1px)}
+.room-facts{margin:4px 6px 0;display:grid;gap:17px}.room-facts>div+div{border-top:1px solid #ccc;padding-top:17px}.room-facts dt{font-weight:bold;margin-bottom:7px;line-height:1.8}.room-facts dd{margin:0;color:#555;line-height:2}
+.start-steps{margin:6px 3px 0;padding-left:23px;line-height:2;color:#555}.start-steps li{padding-left:5px;margin-bottom:17px}.start-steps strong{color:#111;font-weight:bold}.source-notes{border-top:1px solid #aaa;padding:18px 6px 0;margin-top:20px}.source-notes h3{margin-bottom:8px}.source-notes p{line-height:2;margin-bottom:18px}.source-notes p:last-child{margin-bottom:0}
+.info-window details{margin:0 6px;border-bottom:1px solid #ccc}.info-window details:last-child{border:0}.info-window summary{cursor:pointer;min-height:44px;padding:13px 0;line-height:1.8;font-weight:bold}.info-window details p{padding:0 0 15px;line-height:2}
+@media(max-width:520px){.download-body{padding:24px 0 30px}.download-page{max-width:390px}.download-logo{margin-bottom:22px}.download-window{padding:42px 22px 20px;margin-bottom:20px}.download-intro{padding:8px 4px 16px}.download-options{grid-template-columns:minmax(0,1fr)}.download-option{padding:16px 5px 18px}.download-option+ .download-option{border-left:0;border-top:1px solid #aaa;padding-top:22px}.download-platform{min-height:0;gap:8px}.download-version{margin:12px 0 5px}.room-facts{margin:4px 2px}.source-notes{padding-left:2px;padding-right:2px}.info-window details{margin:0 2px}}
